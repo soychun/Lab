@@ -1,7 +1,7 @@
 import sys
 n = int(sys.stdin.readline())
 first = ['***','* *','***']
-
+#이것도 다시 풀어볼 것
 def star(n,x):
     out = []
     if n==3:
