@@ -1,6 +1,10 @@
-import sys
-n = list(map(int,sys.stdin.readline().split()))
-print(n)
+# https://www.acmicpc.net/problem/2750
 
-# input : 1 2 3 4 5
-# output : [1, 2, 3, 4, 5]
+import sys
+n = int(sys.stdin.readline())
+data = [int(sys.stdin.readline().strip()) for i in range(n)]
+print(data)
+print(sorted(data))
+print(sorted(data,reverse=True))
+data.sort()
+print(data)
