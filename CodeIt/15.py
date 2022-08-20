@@ -156,8 +156,57 @@ print(a%b)
 a = float(input())
 print(format(a,".2f"))
 
+
 # 43    [기초-산술연산] 실수 2개 입력받아 나눈 결과 계산하기(py)
+# round로 해 주었더라도, 포멧을 항상 맞춰주는 것이 좋다.
 a,b = map(float, input().split())
 print(format(round(a/b,3),".3f"))
 
+# 44  [기초-산술연산] 정수 2개 입력받아 자동 계산하기(py)
+a,b = map(int, input().split())
+print(a+b)
+print(a-b)
+print(a*b)
+print(a//b)
+print(a%b)
+print(format(a/b,".2f"))
+# 45 : [기초-산술연산] 정수 3개 입력받아 합과 평균 출력하기(설명)(py)
+a,b,c = map(int,input().split())
+print(a+b+c,format(round((a+b+c)/3,2),".2f"))
 
+# 46 : [기초-비트시프트연산] 정수 1개 입력받아 2배 곱해 출력하기(설명)(py)
+# ** python에서 실수 값에 대한 비트시프트 연산은 허용되지 않고 오류가 발생한다.
+a = int(input())
+print(a<<1)
+
+# 47 : [기초-비트시프트연산] 2의 거듭제곱 배로 곱해 출력하기(설명)
+# 정수 2개(a, b)를 입력받아 a를 2b배 곱한 값으로 출력해보자.
+a,b = map(int,input().split())
+print(a<<b)
+
+# 48 : [기초-비교연산] 정수 2개 입력받아 비교하기1(설명)(py)
+a,b = map(int, input().split())
+if(a<b):
+    print("True")
+    print(a<b)
+else :
+    print("False")
+
+# 49 : [기초-비교연산] 정수 2개 입력받아 비교하기2(설명)
+a,b = map(int, input().split())
+print(a==b)
+
+# 50 : [기초-비교연산] 정수 2개 입력받아 비교하기3(설명)
+a,b = map(int, input().split())
+print(b>=a)
+
+# 51 : [기초-비교연산] 정수 2개 입력받아 비교하기4(설명)
+a,b = map(int,input().split())
+print(a!=b)
+
+# 52 : [기초-논리연산] 정수 입력받아 참 거짓 평가하기(
+a = int(input())
+print(a!=0)
+
+# 53 : [기초-논리연산] 참 거짓 바꾸기(설명)
+a=bool
