@@ -366,3 +366,105 @@ while b<=a:
 a = int(input())
 for i in range(0,a+1):
     print(i)
+
+# 77 : [기초-종합] 짝수 합 구하기(설명)
+a = int(input())
+sum = 0
+for i in range(a+1):
+    if i%2 ==0:
+        sum+=i
+print(sum)
+
+# 78 : [기초-종합] 원하는 문자가 입력될 때까지 반복 출력하기
+s = 1
+while s!='q':
+    s = input()
+    print(s)
+# 두번째 풀이
+while True:
+    n = input()
+    print(n)
+    if n=='q':
+        break
+
+# 79 : [기초-종합] 언제까지 더해야 할까?(py)
+#첫번째 풀이
+n = int(input())
+sum = 0
+s = 0
+while True:
+    sum +=s
+    # s+=1
+    if sum>=n:
+        print(s)
+        break
+    s += 1
+# 두번째 풀이
+e = int(input())
+sum = 0
+s = 0
+while sum<e:
+    s += 1
+    sum +=s
+print(s)
+
+# 80 : [기초-종합] 주사위 2개 던지기(설명)
+n,m=map(int,input().split())
+for i in range(1,n+1):
+    for j in range(1,m+1):
+        print(i,j)
+
+# 81 : [기초-종합] 16진수 구구단 출력하기
+n = int(input(),16)
+for i in range(1,int('f',16)+1):
+    print("B*%X=%X" %(i,n*i))
+
+# 82 : [기초-종합] 3 6 9 게임의 왕이 되자(설명)
+a = int(input())
+for i in range(1,a+1):
+    if((i%10 ==3) or (i%10 ==6) or (i%10 ==9)):
+        print('X',end=' ')
+    else:
+        print(i,end=' ')
+
+# 83 : [기초-종합] 빛 섞어 색 만들기(설명
+a,b,c = map(int,input().split())
+s=0
+for i in range(a):
+    for j in range(b):
+        for k in range(c):
+            print(i,j,k)
+            s+=1
+print(s)
+
+# 84 : [기초-종합] 소리 파일 저장용량 계산하기(py)
+h,b,c,s = map(int,input().split())
+print("%.1f MB"%(h*b*c*s/8/1024/1024))
+
+# 85 : [기초-종합] 그림 파일 저장용량 계산하기
+w,h,b = map(int,input().split())
+print("%.2f MB"%(round(w*h*b/8/1024/1024,2)))
+
+# 86 : [기초-종합] 거기까지! 이제 그만~
+a = 1
+b = int(input())
+sum = 0
+while sum<b:
+    sum +=a
+    a+=1
+print(sum)
+
+# 87 : [기초-종합] 3의 배수는 통과
+
+
+# 89 : [기초-종합] 수 나열하기2(py)
+a,r,n = map(int,input().split())
+print(a*(r**(n-1)))
+
+# 90 : [기초-종합] 수 나열하기3(py)
+a,m,d,n = map(int,input().split())
+for _ in range(n-1):
+    a = a*(m)+d
+print(a)
+
+# 91 : [기초-종합] 함께 문제 푸는 날(설명)
