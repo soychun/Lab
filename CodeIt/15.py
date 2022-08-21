@@ -209,4 +209,160 @@ a = int(input())
 print(a!=0)
 
 # 53 : [기초-논리연산] 참 거짓 바꾸기(설명)
-a=bool
+a=bool(int(input()))
+print(not a)
+
+# 54 : [기초-논리연산] 둘 다 참일 경우만 참 출력하기(설명)
+# 참, 거짓의 논리값 인 불(boolean) 값을 다루어주는 예약어는 not, and, or 이 있고,
+# 불 값들 사이의 논리(not, and, or) 연산 결과도 마찬가지로 True 또는 False 의 불 값으로 계산된다.
+a,b = map(int,input().split())
+a = bool(a)
+b = bool(b)
+print(a and b)
+
+# 55 : [기초-논리연산] 하나라도 참이면 참 출력하기
+a,b = map(int, input().split())
+print(bool(a) or bool(b))
+
+# 56 : [기초-논리연산] 참/거짓이 서로 다를 때에만 참 출력하기
+a,b = map(int, input().split())
+a= bool(a)
+b = bool(b)
+print((a and not(b)) or (not(a) and b))
+
+# 57 : [기초-논리연산] 참/거짓이 서로 같을 때에만 참 출력하기
+a,b = map(int,input().split())
+a = bool(a)
+b = bool(b)
+print(     ((not a)or b)and(a or (not b))       )
+
+# 58 : [기초-논리연산] 둘 다 거짓일 경우만 참 출력하기(py)
+a,b = map(int,input().split())
+a = bool(a)
+b = bool(b)
+print(not(a or b))
+
+# 59 : [기초-비트단위논리연산] 비트단위로 NOT 하여 출력하기(설명)
+a = int(input())
+print(~a)
+
+# 60 : [기초-비트단위논리연산] 비트단위로 AND 하여 출력하기(설명)
+a,b = map(int,input().split())
+print(a&b)
+
+# 63 : [기초-3항연산] 정수 2개 입력받아 큰 값 출력하기(설명)(
+a,b = map(int,input().split())
+if(a<b):
+    print(b)
+else:
+    print(a)
+c = a if (a>=b) else b
+print(c)
+
+# 64 : [기초-3항연산] 정수 3개 입력받아 가장 작은 값 출력하기(
+a=list(map(int,input().split()))
+print(min(a))
+
+a,b,c = map(int,input().split())
+print((a if a<b else b) if ((a if a<b else b)<c) else c)
+
+# 65 : [기초-조건/선택실행구조] 정수 3개 입력받아 짝수만 출력하기
+a = list(map(int,input().split()))
+for i in a:
+    if i%2==0:
+        print(i)
+
+# 66 : [기초-조건/선택실행구조] 정수 3개 입력받아 짝/홀 출력하기(설명)
+a =list(map(int,input().split()))
+for i in a:
+    if i%2 == 0:
+        print('even')
+    else:
+        print('odd')
+
+# 67 : [기초-조건/선택실행구조] 정수 1개 입력받아 분류하기
+a = int(input())
+if a<0:
+    if a%2==0:
+        print('A')
+    else:
+        print('B')
+else:
+    if a%2==0:
+        print('C')
+    else:
+        print('D')
+
+# 68 : [기초-조건/선택실행구조] 점수 입력받아 평가 출력하기(
+s = int(input())
+if s>=90:
+    print('A')
+else:
+    if s>=70:
+        print('B')
+    else:
+        if s>=40:
+            print('C')
+        else:
+            print('D')
+
+# 69 : [기초-조건/선택실행구조] 평가 입력받아 다르게 출력하기(py)
+a = input()
+if a=='A':
+    print("best!!!")
+elif a=='B':
+    print("good!!")
+elif a =='C':
+    print('run!')
+elif a == 'D':
+    print('slowly~')
+else:
+    print('what?')
+
+# 70 : [기초-조건/선택실행구조] 월 입력받아 계절 출력하기(설명)(py)
+s = int(input())
+if s//3==1:
+    print('spring')
+elif s//3==2:
+    print('summer')
+elif s//3==3:
+    print('fall')
+else:
+    print('winter')
+
+# 71 : [기초-반복실행구조] 0 입력될 때까지 무한 출력하기(설명)
+n = int(input())
+while(n!=0):
+    print(n)
+    n = int(input())
+
+# 72 : [기초-반복실행구조] 정수 1개 입력받아 카운트다운 출력하기1
+a = int(input())
+while a!=0:
+    print(a)
+    a = a-1
+
+# 73 : [기초-반복실행구조] 정수 1개 입력받아 카운트다운 출력하기2
+a = int(input())
+while a!=0:
+    a-=1
+    print(a)
+
+# 74 : [기초-반복실행구조] 문자 1개 입력받아 알파벳 출력하기(설명)
+e = ord(input())
+s = ord('a')
+while(s!=e+1):
+    print(chr(s),end=' ')
+    s+=1
+
+# 75 : [기초-반복실행구조] 정수 1개 입력받아 그 수까지 출력하기1
+a = int(input())
+b = 0
+while b<=a:
+    print(b)
+    b+=1
+
+# 76 : [기초-반복실행구조] 정수 1개 입력받아 그 수까지 출력하기2
+a = int(input())
+for i in range(0,a+1):
+    print(i)
