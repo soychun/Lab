@@ -60,4 +60,6 @@ while a>=b:
         continue
     print(b, end=' ')
     b += 1
-    # 이 코드는 틀렸음!!!!!!!!!!!!!!!!!
+    #
+#아래는 역순으로 포문 돌리는 방법임
+for i in range(n - 1, -1, -1):

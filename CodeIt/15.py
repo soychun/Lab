@@ -468,3 +468,26 @@ for _ in range(n-1):
 print(a)
 
 # 91 : [기초-종합] 함께 문제 푸는 날(설명)
+# 3명이 다시 모여서 문제를 풀게 되는 날은 언제인가? 동시 가입/등업 후 며칠 후?
+# input : 3,7,9
+# output 63
+# 수의 특징을 찾아서 문제를 풀어보자  / 일단 내가 가장 먼저 생각난 것은 최소 공배수 / 인수분해뱃
+# 무식하게 구하기
+
+# 92
+n = int(input())
+s = list(map(int, input().split()))
+
+l = [0] * 23
+
+for i in s:
+    l[i - 1] = l[i - 1] + 1
+
+for i in l:
+    print(i, end=' ')
+
+# 93
+n = int(input())
+s = list(map(int, input().split()))
+for i in range(n - 1, -1, -1):
+    print(s[i], end=' '
