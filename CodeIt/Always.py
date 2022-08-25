@@ -63,3 +63,6 @@ while a>=b:
     #
 #아래는 역순으로 포문 돌리는 방법임
 for i in range(n - 1, -1, -1):
+
+# 2차원 리스트 선언 방법
+l = [[0 for _ in range(10)] for _in range(10)]

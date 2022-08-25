@@ -1,11 +1,3 @@
-'''AAABB
-AABAB
-
-n=10,
-K=24
-두번째 B 위치 P를 구하시오
-2진수로 나타냄'''
-
 # 95 : [기초-리스트] 바둑판에 흰 돌 놓기(설명
 n=int(input())
 l = [[0 for _ in range(20)] for _ in range(20)]
