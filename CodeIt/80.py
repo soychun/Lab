@@ -6,14 +6,20 @@ K=24
 두번째 B 위치 P를 구하시오
 2진수로 나타냄'''
 
-
-# 91 : [기초-종합] 함께 문제 푸는 날(설명)
-# 3명이 다시 모여서 문제를 풀게 되는 날은 언제인가? 동시 가입/등업 후 며칠 후?
-# input : 3,7,9
-# output 63
-# 수의 특징을 찾아서 문제를 풀어보자  / 일단 내가 가장 먼저 생각난 것은 최소 공배수 / 인수분해뱃
-# 무식하게 구하기
-a,b = map(int,input().split())
+# 95 : [기초-리스트] 바둑판에 흰 돌 놓기(설명
+n=int(input())
+l=[[0]*4]*4
 
 
-for i in range(max(a,b),a*b+1)
+for i in range(n):
+    x,y =map(int,input().split())
+    print(x,y)
+    d[x][y]=1
+
+for i in range(1, 20) :
+  for j in range(1, 20) :
+    print(l[i][j], end=' ')    #공백을 두고 한 줄로 출력
+  print()
+print(l[0][1])
+#
+# print(len(l),len(l[0]))
