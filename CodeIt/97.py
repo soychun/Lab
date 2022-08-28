@@ -2,7 +2,7 @@
 
 h,w = map(int,input().split())
 n = int(input())
-s = [[0 for _ in range(h+1)] for _ in range(w+1)]
+s = [[0 for _ in range(w+1)] for _ in range(h+1)]
 dx = [1,-1,0,0]
 dy = [0,0,1,-1]
 for _ in range(n):
@@ -17,7 +17,7 @@ for _ in range(n):
             # print(x+dx[0]*i,y)
             s[x+dx[0]*i][y] = 1
 
-    for i in range(1,h+1):
-        for j in range(1,w+1):
-            print(s[i][j],end = ' ')
-        print()
+for i in range(1,h+1):
+    for j in range(1,w+1):
+        print(s[i][j],end = ' ')
+    print()

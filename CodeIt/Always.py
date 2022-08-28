@@ -66,3 +66,6 @@ for i in range(n - 1, -1, -1):
 
 # 2차원 리스트 선언 방법
 l = [[0 for _ in range(10)] for _in range(10)]
+
+
+# 97번을 보면서 x,y,h,w를 어떻게 정의할 지 고민해 볼 것
